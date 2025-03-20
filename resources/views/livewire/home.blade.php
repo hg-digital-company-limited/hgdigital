@@ -627,9 +627,6 @@
                                     <li><i class="fa-solid fa-circle-check"></i> Xuất hiện trên Google sau 3-5 ngày</li>
                                     <li><i class="fa-solid fa-circle-check"></i> Code tay 100%</li>
                                     <li><i class="fa-solid fa-circle-check"></i> Quản trị riêng</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> Đặt hàng online</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> Thanh toán tự động</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> Quản lý doanh thu</li>
                                     <li><i class="fa-solid fa-circle-check"></i> Bảo hành trọn đời</li>
                                 </ul>
                             </div>
@@ -670,7 +667,6 @@
                                     <li><i class="fa-solid fa-circle-check"></i> Quản trị riêng</li>
                                     <li><i class="fa-solid fa-circle-check"></i> Thanh toán tự động</li>
                                     <li><i class="fa-solid fa-circle-check"></i> Quản lý doanh thu</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> Kết nối Zalo OA tự động</li>
                                     <li><i class="fa-solid fa-circle-check"></i> Bảo hành trọn đời</li>
                                 </ul>
                             </div>

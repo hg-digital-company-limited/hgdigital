@@ -1,7 +1,8 @@
 <div>
+
     <head>
-        <title>Tin Tức - HG DIGITAL</title>
-        <meta property="og:description" content="HG DIGITAL cung cấp giải pháp thiết kế website tối ưu, chuẩn SEO, giao diện đẹp mắt và thân thiện người dùng." />
+        <title>{{$blog->title}} - HG DIGITAL</title>
+        <meta property="og:description" content="{{$blog->short_desc}}" />
 
     </head>
     <div class="page-breadcrumb-area">
@@ -14,12 +15,12 @@
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
                         <div class="page-heading">
-                            <h3 class="page-title">Blog Details</h3>
+                            <h3 class="page-title">{{$blog->title}}</h3>
                         </div>
                         <div class="breadcrumb-list">
                             <ul>
                                 <li><a href="index.php">Home</a></li>
-                                <li class="active">Blog Details</li>
+                                <li class="active">Chi Tiết Tin Tức</li>
                             </ul>
                         </div>
                     </div>
@@ -36,66 +37,17 @@
                     <article class="te-post-item">
                         <div class="te-post-thumbnail">
                             <a href="#">
-                                <img src="/automec/images/blog-detail/b-details-feature.jpg" alt="Blog Image" />
+                                <img src="{{Storage::url($blog->banner)}}" alt="Blog Image" />
                             </a>
                         </div>
                         <div class="te-post-content-wrapper">
                             <div class="te-post-meta">
-                                <span><i class="far fa-calendar-check"></i>March 8, 2023</span>
-                                <span><a href="#"><i class="far fa-user"></i>By Wells Alden</a></span>
-                                <span><a href="#"><i class="far fa-comments"></i>8 Comments</a></span>
+                                <span><i class="far fa-calendar-check"></i>{{ $blog->created_at->format('F d, Y') }}</span>
+                                <span><a href="#"><i class="far fa-user"></i>By Admin</a></span>
+                                <span><a href="#"><i class="far fa-eye"></i>{{ $blog->views }} Views</a></span>
                             </div>
-                            <h3 class="te-post-title">
-                                <a href="blog-details.php">The Importance of Regular Oil Changes for Your Car</a>
-                            </h3>
-                            <div class="te-post-content">
-                                <p>Aliquam eros justo, posuere loborti vivera laoreet matti ullamcorper posuere viverra
-                                    Aliquam eros one justo, posuere lobortis, viverra laoreet augue mattis fermentum
-                                    ullamcorper viverra</p>
-                                <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper pouere viverra
-                                    .Aliquam eros one justo, posuere lobortis, viverra laoreet augue mattis fermentum
-                                    ullamcorper viverra ullcorper a the a man posuere viverra Aliqerojustoposuere
-                                    loborti viverra laoreet matti ullamcorper posuere viverra the Aliquam eros justo,
-                                    posuere lobortis non, Aliquam eros justo, posuere </p>
-                                <blockquote>
-                                    <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere
-                                        viverra .Aliquam eros one of justo, posuere lobortis, viverra laoreet augue
-                                        mattis fermentum ullamcorper vi ullamcorper a the a the man posuere viverra
-                                        Aliqerojustoposuere loborti viverra laoreet matti ullamcorp posuere viverra the
-                                        anf .Aliquam eros justo, posuere lobortis non, Aliquam</p>
-                                    <footer>- Jahirul Islam Sifat, Car Service</footer>
-                                </blockquote>
-                                <p>Aliquam eros justo, posuere loborti viverra laoreet matti lamcorper posuere viverra
-                                    .Aliquam eros one justo, posuere lobortis, viverra laoreet augue mattis fermentum
-                                    ullamcorper viverra ullcorper a the a man posuere viverra Aliqerojustoposuere
-                                    loborti viverra laoreet matti ullamcorper posuere viverra the .Aliquam eros justo,
-                                    posuere lobortis non, Aliquam eros justo, posuere </p>
 
-                                <div class="row gy-4 mb-4">
-                                    <div class="col-md-6">
-                                        <div class="blog-gallery">
-                                            <img class="rounded" src="/automec/images/blog-detail/b-gallery-one.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="blog-gallery">
-                                            <img class="rounded" src="/automec/images/blog-detail/b-gallery-two.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4>Efficiency in Every Exhaust</h4>
-                                <ul>
-                                    <li>Fueling Commerce One Delivery at a Time</li>
-                                    <li>Mastering the Art of Efficient Movement</li>
-                                    <li>Efficiency in Motion, Every Mile</li>
-                                    <li>Navigating Your World Seamlessly</li>
-                                </ul>
-                                <p>Aliquam eros justo, posuere loborti viverra laoreet matti lamcorper posuere viverra
-                                    .Aliquam eros one justo, posuere lobortis, viverra laoreet augue mattis fermentum
-                                    ullamcorper viverra ullcorper a the a man posuere viverra Aliqerojustoposuere
-                                    loborti viverra laoreet matti ullamcorper posuere viverra the .Aliquam eros justo,
-                                    posuere lobortis non, Aliquam eros justo, posuere </p>
-                            </div>
+                            <div class="te-post-content"> {!! $blog->content !!}</div>
                             <div class="te-single-post-meta">
                                 <div class="te-blog-post-tag">
                                     <span>TAGS</span>
@@ -139,8 +91,8 @@
                         <div class="te-author-text">
                             <div class="te-post-author-info">
                                 <div class="te-author-thumb">
-                                    <a href="#"><img alt="" src="/automec/images/blog/avatar.jpg" class="avatar" height="120"
-                                            width="120"></a>
+                                    <a href="#"><img alt="" src="/automec/images/blog/avatar.jpg" class="avatar"
+                                            height="120" width="120"></a>
                                 </div>
                                 <div class="te-post-author-content">
                                     <h3><a href="#">David Max</a></h3>
@@ -259,7 +211,7 @@
                             <div class="te-post-comments-title">
                                 <h2>Add A Comment</h2>
                             </div>
-                            <form action="#" method="post" class="te-comment-form">
+                            <form action="#"   class="te-comment-form">
                                 <div class="row gx-4">
                                     <div class="col-xl-6">
                                         <div class="te-contacts-name">
@@ -315,103 +267,49 @@
                                 <h4 class="wp-block-heading">Recent Posts</h4>
                             </div>
                             <ul>
-                                <li>
-                                    <div class="te-latest-post-thumb">
-                                        <a href="blog-details.php">
-                                            <img src="/automec/images/blog/rp-1.jpg" alt="" />
-                                        </a>
-                                    </div>
-                                    <div class="te-latest-post-desc">
-                                        <h3 class="te-latest-post-title">
-                                            <a href="blog-details.php">Precision Automotive Services</a>
-                                        </h3>
-                                        <span class="te-latest-post-meta"><i class="fa-regular fa-calendar-days"></i>20
-                                            Aug,2022</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="te-latest-post-thumb">
-                                        <a href="blog-details.php">
-                                            <img src="/automec/images/blog/rp-2.jpg" alt="" />
-                                        </a>
-
-                                    </div>
-                                    <div class="te-latest-post-desc">
-                                        <h3 class="te-latest-post-title">
-                                            <a href="blog-details.php">Elite Automotive Solutions</a>
-                                        </h3>
-                                        <span class="te-latest-post-meta"><i class="fa-regular fa-calendar-days"></i>20
-                                            Aug,2022</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="te-latest-post-thumb">
-                                        <a href="blog-details.php">
-                                            <img src="/automec/images/blog/rp-3.jpg" alt="" />
-                                        </a>
-                                    </div>
-                                    <div class="te-latest-post-desc">
-                                        <h3 class="te-latest-post-title">
-                                            <a href="blog-details.php">Quality Auto Repairs Experts</a>
-                                        </h3>
-                                        <span class="te-latest-post-meta"><i class="fa-regular fa-calendar-days"></i>20
-                                            Aug,2022</span>
-                                    </div>
-                                </li>
+                                @foreach($topBlogs as $topBlog)
+                                    <li>
+                                        <div class="te-latest-post-thumb">
+                                            <a href="{{ route('blog', $topBlog->slug) }}">
+                                                <img src="{{ Storage::url($topBlog->banner) }}" alt=""  style="height: 75px;object-fit: initial;width: initial;"/>
+                                            </a>
+                                        </div>
+                                        <div class="te-latest-post-desc">
+                                            <h3 class="te-latest-post-title">
+                                                <a href="{{ route('blog', $topBlog->slug) }}">{{ $topBlog->title }}</a>
+                                            </h3>
+                                            <span class="te-latest-post-meta"><i class="fa-regular fa-calendar-days"></i>{{ $topBlog->created_at->format('d M, Y') }}</span>
+                                        </div>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="widget te_widget_categories">
                             <div class="te-widget-title">
                                 <h4 class="wp-block-heading">Categories</h4>
                             </div>
-                            <ul>
-                                <li><a href="#">Car Maintenance Tips</a>(1)</li>
-                                <li><a href="#">Vehicle Safety</a>(8)</li>
-                                <li><a href="#">Seasonal Car Care</a>(3)</li>
-                                <li><a href="#">Tire Rotation & Alignment</a>(5)</li>
-                                <li><a href="#">Engine and Performance</a>(1)</li>
-                                <li><a href="#">ARoad Trip Preparation</a>(3)</li>
-                                <li><a href="#">Battery Testing & Replacement</a>(5)</li>
-                                <li><a href="#">Full-Service Car Wash & Detailing</a>(5)</li>
-                            </ul>
+                            <div>
+                                <ul>
+                                    @foreach($categories as $category)
+                                        <li>
+                                            <a href="#">{{ $category->name }}</a> ({{ $category->blogs_count }})
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                         <div class="widget te_widget_tag_cloud">
                             <div class="te-widget-title">
                                 <h4 class="wp-block-heading">Tags</h4>
                             </div>
                             <div class="tagcloud">
-                                <a href="#">ProCar</a>
-                                <a href="#">Auto Car</a>
-                                <a href="#">Speed</a>
-                                <a href="#">Auto Repairs</a>
-                                <a href="#">Car Care</a>
-                                <a href="#">Repair</a>
-                                <a href="#">AutoFix</a>
-                            </div>
-                        </div>
-                        <div class="widget te_widget_instagram_feed">
-                            <div class="te-widget-title">
-                                <h4 class="wp-block-heading">Gallery</h4>
-                            </div>
-                            <div class="widget-instagram-feed">
-                                <div class="single-instagram-feed">
-                                    <img src="/automec/images/instagram/instagram-1.jpg" alt="instagram photo">
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <img src="/automec/images/instagram/instagram-2.jpg" alt="instagram photo">
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <img src="/automec/images/instagram/instagram-3.jpg" alt="instagram photo">
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <img src="/automec/images/instagram/instagram-4.jpg" alt="instagram photo">
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <img src="/automec/images/instagram/instagram-5.jpg" alt="instagram photo">
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <img src="/automec/images/instagram/instagram-6.jpg" alt="instagram photo">
-                                </div>
+                                <a href="#">Công Nghệ</a>
+                                <a href="#">Điện Thoại</a>
+                                <a href="#">Phần Mềm</a>
+                                <a href="#">Hướng Dẫn</a>
+                                <a href="#">Tin Tức</a>
+                                <a href="#">Bảo Mật</a>
+                                <a href="#">Đánh Giá</a>
                             </div>
                         </div>
                         <div class="widget te_widget_social_profile">

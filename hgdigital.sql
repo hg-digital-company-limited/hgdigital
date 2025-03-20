@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 20, 2025 at 01:32 PM
+-- Generation Time: Mar 20, 2025 at 02:14 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -24,6 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `blogs`
+--
+
+CREATE TABLE `blogs` (
+  `id` bigint UNSIGNED NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `short_desc` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `banner` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `views` int UNSIGNED NOT NULL DEFAULT '0',
+  `category_id` bigint UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`id`, `slug`, `title`, `short_desc`, `content`, `banner`, `views`, `category_id`, `created_at`, `updated_at`) VALUES
+(1, 'nhung-tinh-nang-awesome-giup-trai-nghiem-thang-hoa-tren-samsung-galaxy-a36', 'Những tính năng Awesome giúp trải nghiệm thăng hoa trên Samsung Galaxy A36', 'Samsung Galaxy A36 không chỉ là một chiếc smartphone thông thường; nó mang đến cho người dùng một trải nghiệm đa dạng và phong phú với nhiều tính năng ấn tượng. Dưới đây là những tính năng nổi bật giúp Galaxy A36 thỏa mãn nhu cầu của người dùng và nâng cao trải nghiệm sử dụng.', '<p>Samsung Galaxy A36 không chỉ là một chiếc smartphone thông thường; nó mang đến cho người dùng một trải nghiệm đa dạng và phong phú với nhiều tính năng ấn tượng. Dưới đây là những tính năng nổi bật giúp Galaxy A36 thỏa mãn nhu cầu của người dùng và nâng cao trải nghiệm sử dụng.</p><h3>1. Màn Hình Super AMOLED Sắc Nét</h3><p>Samsung Galaxy A36 được trang bị màn hình Super AMOLED với độ phân giải cao, mang đến màu sắc sống động và độ tương phản tuyệt vời. Điều này không chỉ giúp người dùng thưởng thức hình ảnh sắc nét mà còn tạo ra trải nghiệm xem phim và chơi game hấp dẫn hơn.</p><h3>2. Hiệu Năng Mượt Mà</h3><p>Với vi xử lý mạnh mẽ và RAM lớn, Galaxy A36 đảm bảo hiệu suất hoạt động mượt mà trong mọi tác vụ. Từ việc lướt web, xem video đến chơi game, người dùng sẽ không gặp phải tình trạng lag hay giật hình.</p><h3>3. Camera Đỉnh Cao</h3><p>Camera chính của Galaxy A36 cho phép người dùng chụp những bức ảnh sắc nét và chi tiết, ngay cả trong điều kiện ánh sáng yếu. Tính năng chụp chân dung và các chế độ chụp thông minh giúp người dùng dễ dàng tạo ra những bức ảnh ấn tượng.</p><h3>4. Thời Gian Pin Ấn Tượng</h3><p>Với viên pin dung lượng lớn, Galaxy A36 đảm bảo thời gian sử dụng kéo dài. Người dùng có thể thoải mái chơi game, xem phim mà không lo hết pin giữa chừng. Hơn nữa, tính năng sạc nhanh giúp tiết kiệm thời gian chờ đợi.</p><h3>5. Giao Diện One UI Thân Thiện</h3><p>Giao diện One UI trên Galaxy A36 mang đến trải nghiệm người dùng thân thiện và trực quan. Tính năng tối ưu hóa giúp dễ dàng truy cập vào các ứng dụng yêu thích, đồng thời tạo ra một không gian làm việc gọn gàng và hiệu quả.</p><h3>6. Kết Nối 5G Tương Lai</h3><p>Với khả năng kết nối 5G, Galaxy A36 cho phép người dùng trải nghiệm tốc độ internet nhanh chóng và ổn định. Điều này đặc biệt hữu ích cho những ai thường xuyên sử dụng mạng để làm việc hoặc giải trí.</p><h3>7. Bảo Mật Tốt Hơn</h3><p>Samsung Galaxy A36 trang bị nhiều tính năng bảo mật như nhận diện khuôn mặt và cảm biến vân tay, giúp bảo vệ thông tin cá nhân của người dùng. Bạn có thể yên tâm hơn khi lưu trữ dữ liệu quan trọng trên thiết bị.</p><h3>Kết Luận</h3><p>Samsung Galaxy A36 không chỉ là một chiếc điện thoại thông minh, mà còn là một công cụ hỗ trợ đắc lực cho cuộc sống hàng ngày. Với những tính năng ấn tượng và trải nghiệm người dùng tuyệt vời, Galaxy A36 chắc chắn sẽ là sự lựa chọn hoàn hảo cho những ai đang tìm kiếm một chiếc smartphone đa năng và hiệu suất cao. Hãy khám phá và trải nghiệm ngay hôm nay!</p>', '01JPSX2154SCSRDKPH9GSGV1B4.png', 2, 1, '2025-03-20 13:49:34', '2025-03-20 14:14:04');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `cache`
 --
 
@@ -38,8 +64,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1742469646),
-('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1742469646;', 1742469646),
+('356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1742478571),
+('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1742478571;', 1742478571),
 ('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1742457246),
 ('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1742457246;', 1742457246);
 
@@ -54,6 +80,33 @@ CREATE TABLE `cache_locks` (
   `owner` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `expiration` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, ' Tin Tức Công Nghệ', '2025-03-20 13:43:13', '2025-03-20 13:43:13'),
+(2, 'Thiết Kế Web', '2025-03-20 13:43:23', '2025-03-20 13:43:23'),
+(3, 'Phát Triển Web', '2025-03-20 13:43:26', '2025-03-20 13:43:26'),
+(4, 'SEO và Digital Marketing', '2025-03-20 13:43:31', '2025-03-20 13:43:31'),
+(5, 'Bảo Mật Website', '2025-03-20 13:43:36', '2025-03-20 13:43:36'),
+(6, 'Thương Mại Điện Tử', '2025-03-20 13:43:39', '2025-03-20 13:43:39'),
+(7, 'Case Studies và Phân Tích', '2025-03-20 13:43:43', '2025-03-20 13:43:43'),
+(8, 'Sự Kiện và Hội Thảo', '2025-03-20 13:43:46', '2025-03-20 13:43:46');
 
 -- --------------------------------------------------------
 
@@ -127,7 +180,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (2, '0001_01_01_000001_create_cache_table', 1),
 (3, '0001_01_01_000002_create_jobs_table', 1),
 (4, '2025_03_20_120437_create_services_table', 2),
-(5, '2025_03_20_145433_add_columns_to_services_table', 3);
+(5, '2025_03_20_145433_add_columns_to_services_table', 3),
+(6, '2025_03_20_203814_create_categories_table', 4),
+(7, '2025_03_20_204457_create_blogs_table', 5);
 
 -- --------------------------------------------------------
 
@@ -197,7 +252,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('3Ow3mdjimTYswli1VJtGbMZZOoIQiiRGJ644z8pG', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMGtpNm9qY212Y3I5SWhvTE1YdDBUREtUbGh6TXY0azR1UVNoMFFxZCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jb250YWN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiQxUVgycVlHZ1ZzWnljUkozbEg2SWdlbXpSY3lQY0N2ZzlMcTZ0VngvTEJ5RmdZNk1WdWQyQyI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1742477544);
+('3Ow3mdjimTYswli1VJtGbMZZOoIQiiRGJ644z8pG', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMGtpNm9qY212Y3I5SWhvTE1YdDBUREtUbGh6TXY0azR1UVNoMFFxZCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hYm91dCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkMVFYMnFZR2dWc1p5Y1JKM2xINklnZW16UmN5UGNDdmc5THE2dFZ4L0xCeUZnWTZNVnVkMkMiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1742480051);
 
 -- --------------------------------------------------------
 
@@ -228,6 +283,14 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 --
 
 --
+-- Indexes for table `blogs`
+--
+ALTER TABLE `blogs`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `blogs_slug_unique` (`slug`),
+  ADD KEY `blogs_category_id_foreign` (`category_id`);
+
+--
 -- Indexes for table `cache`
 --
 ALTER TABLE `cache`
@@ -238,6 +301,12 @@ ALTER TABLE `cache`
 --
 ALTER TABLE `cache_locks`
   ADD PRIMARY KEY (`key`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `failed_jobs`
@@ -298,6 +367,18 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `blogs`
+--
+ALTER TABLE `blogs`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -313,7 +394,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `services`
@@ -326,6 +407,16 @@ ALTER TABLE `services`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `blogs`
+--
+ALTER TABLE `blogs`
+  ADD CONSTRAINT `blogs_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
