@@ -9,12 +9,12 @@
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
                         <div class="page-heading">
-                            <h3 class="page-title">Contact Us</h3>
+                            <h3 class="page-title">Liên hệ với chúng tôi</h3>
                         </div>
                         <div class="breadcrumb-list">
                             <ul>
-                                <li><a href="index.php">Home</a></li>
-                                <li class="active">Contact Us</li>
+                                <li><a href="index.php">Trang chủ</a></li>
+                                <li class="active">Liên hệ với chúng tôi</li>
                             </ul>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                     <!-- Contact Info Section Start !-->
                     <div class="te-contact-info-wrapper">
                         <div class="te-title-wrapper">
-                            <h2 class="title">Let Us Know About Your <br /> Next Project</h2>
+                            <h2 class="title">Hãy Cho Chúng Tôi Biết Về <br /> Dự Án Tiếp Theo Của Bạn</h2>
                         </div>
                         <div class="te-contact-info">
                             <div class="te-icon-card style-2">
@@ -43,8 +43,9 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div class="content">
-                                    <h3 class="title">Location</h3>
-                                    <span class="desc">Dhaka 102, utl 1216, road 45 house of street</span>
+                                    <h3 class="title">Địa chỉ</h3>
+                                    <span class="desc">67 Đường ĐHT 22, Phường Đông Hưng Thuận, Quận 12, Thành phố Hồ Chí Minh, Việt Nam
+                                    </span>
                                 </div>
                             </div>
                             <div class="te-icon-card style-2">
@@ -52,9 +53,8 @@
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
                                 <div class="content">
-                                    <h3 class="title">Phone number</h3>
-                                    <a href="tel:0123456789" class="desc">+88 0123456789</a>
-                                    <a href="tel:0123456789" class="desc">1234 - 000 - 000 </a>
+                                    <h3 class="title">Số điện thoại</h3>
+                                    <a href="tel:0966579217" class="desc">+84 966579217</a>
                                 </div>
                             </div>
                             <div class="te-icon-card style-2">
@@ -62,7 +62,7 @@
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 <div class="content">
-                                    <h3 class="title">Emails</h3>
+                                    <h3 class="title">Email</h3>
                                     <a href="mailto:hgdigital.company@gmail.com" class="desc">hgdigital.company@gmail.com</a>
                                 </div>
                             </div>
@@ -87,26 +87,25 @@
                     <!-- Comment Form Start -->
                     <div class="te-comment-respond mt-0">
                         <form action="mail.php" method="post" class="te-comment-form">
-                            <h3>We Can Take Your <br /> Business To Growth</h3>
+                            <h3>Chúng Tôi Có Thể Giúp Doanh Nghiệp Bạn <br /> Phát Triển Mạnh Mẽ</h3>
                             <div class="row gx-4">
                                 <div class="col-xl-6">
                                     <div class="te-contacts-email">
-                                        <input name="email" type="email" placeholder="Your Email*">
+                                        <input name="email" type="email" placeholder="Email của bạn*" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="te-contacts-name">
-                                        <input name="phone" type="text" placeholder="Your Phone">
+                                        <input name="phone" type="text" placeholder="Số điện thoại của bạn">
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="te-contacts-message">
-                                        <textarea name="message" cols="20" rows="3"
-                                            placeholder="Write your Message here"></textarea>
+                                        <textarea name="message" cols="20" rows="3" placeholder="Viết tin nhắn của bạn ở đây" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="te-theme-btn style-2" type="submit">SEND NOW</button>
+                                    <button class="te-theme-btn style-2" type="submit">GỬI NGAY</button>
                                 </div>
                             </div>
                         </form>

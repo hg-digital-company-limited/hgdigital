@@ -79,16 +79,16 @@
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="te-content-wrapper">
-                        <h2 class="te-subscribe-title text-white">Get Free Estimate</h2>
-                        <p class="text text-white">Lorem Ipsum is simply is dumiomy is text Lorem Ipsum </p>
+                        <h2 class="te-subscribe-title text-white">Nhận Bảng Giá Miễn Phí</h2>
+                        <p class="text text-white">Chúng tôi cung cấp báo giá miễn phí cho các dự án thiết kế website.</p>
                         <div class="te-subscribe-form-wrapper">
                             <div class="te-subscribe-form-widget style-2">
                                 <form>
                                     <div class="mc4wp-form-fields">
                                         <div class="single-field">
-                                            <input type="email" placeholder="Enter E-mail" />
+                                            <input type="email" placeholder="Nhập Email của bạn" required />
                                         </div>
-                                        <button class="submit-btn" type="submit">SUBSCRIBE</button>
+                                        <button class="submit-btn" type="submit">ĐĂNG KÝ</button>
                                     </div>
                                 </form>
                             </div>

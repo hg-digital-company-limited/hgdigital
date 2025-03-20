@@ -1,4 +1,9 @@
 <div>
+    <head>
+        <title>Tin Tức - HG DIGITAL</title>
+        <meta property="og:description" content="HG DIGITAL cung cấp giải pháp thiết kế website tối ưu, chuẩn SEO, giao diện đẹp mắt và thân thiện người dùng." />
+
+    </head>
     <div class="page-breadcrumb-area">
         <div class="page-bg">
             <div class="page-overlay" style="background-color: rgba(23, 23, 23, 0.0);"></div>

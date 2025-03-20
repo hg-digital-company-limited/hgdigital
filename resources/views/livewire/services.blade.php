@@ -1,4 +1,9 @@
 <div>
+    <head>
+        <title>Dịch Vụ - HG DIGITAL</title>
+        <meta property="og:description" content="HG DIGITAL cung cấp giải pháp thiết kế website tối ưu, chuẩn SEO, giao diện đẹp mắt và thân thiện người dùng." />
+
+    </head>
     <div class="page-breadcrumb-area">
         <div class="page-bg">
             <div class="page-overlay" style="background-color: rgba(23, 23, 23, 0.0);"></div>
@@ -9,12 +14,12 @@
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
                         <div class="page-heading">
-                            <h3 class="page-title">Services</h3>
+                            <h3 class="page-title">Dịch Vụ</h3>
                         </div>
                         <div class="breadcrumb-list">
                             <ul>
-                                <li><a wire:navigate href="{{ route('home') }}">Home</a></li>
-                                <li class="active">Services</li>
+                                <li><a href="{{ route('home') }}">Trang Chủ</a></li>
+                                <li class="active">Dịch Vụ</li>
                             </ul>
                         </div>
                     </div>

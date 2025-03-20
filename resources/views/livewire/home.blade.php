@@ -1,7 +1,8 @@
 <div>
 
     <head>
-        <title>Trang chủ - HG DIGITAL</title>
+        <title>Trang Chủ - HG DIGITAL</title>
+        <meta property="og:description" content="HG DIGITAL cung cấp giải pháp thiết kế website tối ưu, chuẩn SEO, giao diện đẹp mắt và thân thiện người dùng." />
 
     </head>
     <!-- Slider Section Start !-->
@@ -498,71 +499,61 @@
                             <div class="te-content-wrapper">
                                 <div class="content">
                                     <div class="content-inner">
-                                        <h3 class="title"><a href="project-details.php">DỰ ÁN WEBSITE DỊCH VỤ ĐƯA ĐÓN & THUÊ XE CHUYÊN NGHIỆP</a></h3>
+                                        <h3 class="title"><a >DỰ ÁN WEBSITE DỊCH VỤ ĐƯA ĐÓN & THUÊ XE CHUYÊN NGHIỆP</a></h3>
                                         <span class="sub-title">Dịch vụ</span>
                                     </div>
-                                    <div class="btn-wrapper">
-                                        <a href="project-details.php"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 te-single-isotop blog">
+                <div class="col-lg-4 col-sm-6 te-single-isotop service">
                     <div class="te-portfolio-card style-2">
                         <div class="image">
-                            <img src="/automec/images/project/web4.jpg" alt="portfolio">
+                            <img src="/company/a (3).png" alt="service">
                             <div class="te-content-wrapper">
                                 <div class="content">
                                     <div class="content-inner">
-                                        <h3 class="title"><a href="project-details.php">Blog Du Lịch Việt Nam</a></h3>
-                                        <span class="sub-title">Blog</span>
-                                    </div>
-                                    <div class="btn-wrapper">
-                                        <a href="project-details.php"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                        <h3 class="title"><a >WEBSITE BẤT ĐỘNG SẢN CHO KHÁCH HÀNG ÚC</a></h3>
+                                        <span class="sub-title">Dịch vụ</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 te-single-isotop business">
+                <div class="col-lg-4 col-sm-6 te-single-isotop service">
                     <div class="te-portfolio-card style-2">
                         <div class="image">
-                            <img src="/automec/images/project/web5.jpg" alt="portfolio">
+                            <img src="/company/a (2).png" alt="service">
                             <div class="te-content-wrapper">
                                 <div class="content">
                                     <div class="content-inner">
-                                        <h3 class="title"><a href="project-details.php">Website Giáo Dục XYZ</a></h3>
-                                        <span class="sub-title">Thiết kế</span>
-                                    </div>
-                                    <div class="btn-wrapper">
-                                        <a href="project-details.php"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                        <h3 class="title"><a >WEBSITE GIỚI THIỆU KHÓA HỌC LÁI XE CHO KHÁCH HÀNG CANADA</a></h3>
+                                        <span class="sub-title">Dịch vụ</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 te-single-isotop ecommerce">
+
+                <div class="col-lg-4 col-sm-6 te-single-isotop education">
                     <div class="te-portfolio-card style-2">
                         <div class="image">
-                            <img src="/automec/images/project/web6.jpg" alt="portfolio">
+                            <img src="/company/a (7).png" alt="education">
                             <div class="te-content-wrapper">
                                 <div class="content">
                                     <div class="content-inner">
-                                        <h3 class="title"><a href="project-details.php">Cửa Hàng Thời Trang ABC</a></h3>
-                                        <span class="sub-title">Thương mại điện tử</span>
-                                    </div>
-                                    <div class="btn-wrapper">
-                                        <a href="project-details.php"><i class="fa-solid fa-arrow-right-long"></i></a>
+                                        <h3 class="title"><a >DỰ ÁN WHALEMATH - WEBSITE HỌC TOÁN TƯƠNG TÁC CHO HỌC SINH</a></h3>
+                                        <span class="sub-title">Giáo dục</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -738,7 +729,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="testimonial-image">
-                        <img src="/automec/images/section-bg/testimonial-image.jpg" alt="image">
+                        <img src="/company/sd1.jpg" alt="image">
                     </div>
                     <div class="te-slider-btn-wrapper style-1 mt-3">
                         <a href="#" class="te-slider-nav te-slider-prev" id="testimonial_slider_prev">
