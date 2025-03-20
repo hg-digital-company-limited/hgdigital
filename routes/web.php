@@ -33,3 +33,4 @@ Route::get('/project-detail/{slug}', action: Project::class)->name('project');
 Route::get('/404', Page404::class)->name('404');
 Route::get('/team-member/{slug}', action: TeamMember::class)->name('team-member');
 Route::get('/team-members', action: TeamMembers::class)->name('team-members');
+

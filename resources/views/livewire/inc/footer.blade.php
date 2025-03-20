@@ -10,7 +10,7 @@
                     <div class="te-footer-widget">
                         <div class="te-footer-widget-info">
                             <div class="te-footer-logo">
-                                <a href="index.php"><img src="/automec/images/logo/footer-logo-white.png"
+                                <a href="index.php"><img src="/logo/bg.png"
                                         alt="Footer Logo"></a>
                             </div>
                             <p>Lorem Ipsum is simply is dumiomy is text Lorem Ipsum is simply Ipsum is simply is

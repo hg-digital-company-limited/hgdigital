@@ -244,7 +244,7 @@
                                 </div>
                                 <div class="content">
                                     <h3 class="title">Emails</h3>
-                                    <a href="mailto:info@exampleyourmail.com" class="desc">info@exampleyourmail.com</a>
+                                    <a href="mailto:hgdigital.company@gmail.com" class="desc">hgdigital.company@gmail.com</a>
                                 </div>
                             </div>
                         </div>

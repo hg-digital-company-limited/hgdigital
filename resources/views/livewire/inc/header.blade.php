@@ -3,7 +3,9 @@
         <div class="logo-wrapper d-flex align-items-center">
             <div class="te-logo">
                 <a wire:navigate href="{{ route('home') }}" class="te-standard-logo">
-                    <img src="/automec/images/logo/logo-white.png" alt="logo" />
+                    <img src="/logo/bg.png" alt="logo" style="
+                    max-width: 200px;
+                "/>
                 </a>
             </div>
         </div>
@@ -17,10 +19,9 @@
                             <div class="te-header-top-wrapper">
                                 <div class="header-top-info">
                                     <div class="te-header-contact-info">
-                                        <span><a href="mailto:info@example.com"><i
-                                                    class="fa-solid fa-envelope"></i>info@example.com</a> </span>
-                                        <span><i class="fa-solid fa-location-dot"></i>6391 Elgin Rt.Mirpur,
-                                            10299</span>
+                                        <span><a href="mailto:hgdigital.company@gmail.com"><i
+                                                    class="fa-solid fa-envelope"></i>hgdigital.company@gmail.com</a> </span>
+                                        <span><i class="fa-solid fa-location-dot"></i>67 Đường ĐHT 22, Phường Đông Hưng Thuận, Quận 12, HCM</span>
                                         <span><i class="fa-solid fa-clock"></i>Sunday - Friday: 9 am - 8 pm</span>
                                     </div>
                                 </div>
@@ -47,10 +48,10 @@
                             <div class="te-logo-wrapper">
                                 <div class="te-logo">
                                     <a wire:navigate href="{{ route('home') }}" class="te-sticky-logo">
-                                        <img src="/automec/images/logo/logo.png" alt="logo">
+                                        <img src="/logo/dark.png" alt="logo">
                                     </a>
                                     <a wire:navigate href="{{ route('home') }}" class="te-retina-logo">
-                                        <img src="/automec/images/logo/logo.png" alt="logo">
+                                        <img src="/logo/dark.png" alt="logo">
                                     </a>
                                 </div>
                             </div>
