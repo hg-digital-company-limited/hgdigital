@@ -72,9 +72,9 @@
                         <div class="te-main-img-wrapper">
                             <div class="te-main-img-inner">
                                 <div class="about-img-one">
-                                    <img class="tilt-animate" src="/automec/images/about/about-1.jpg" alt="about card img">
+                                    <img class="tilt-animate" src="/company/about-1.jpg" alt="about card img">
                                     <div class="about-img-two">
-                                        <img class="tilt-animate" src="/automec/images/about/about-2.jpg" alt="about card shape image" />
+                                        <img class="tilt-animate" src="/company/about-2.jpg" alt="about card shape image" />
                                     </div>
                                 </div>
                                 <div class="te-company-foundation-wrapper">
@@ -365,7 +365,7 @@
     <div class="about-us-area style-1">
         <div class="about-us-image">
             <div class="about-us-image-inner">
-                <img src="/automec/images/section-bg/about-sec-bg.jpg" alt="image">
+                <img src="/company/h2-slider-img-1-scaled.webp" alt="image">
             </div>
         </div>
         <div class="container">
@@ -377,12 +377,12 @@
                             <div class="te-section-title">
                                 <div class="te-section-content">
                                     <div>
-                                        <span class="short-title only-divider">ABOUT US</span>
+                                        <span class="short-title only-divider">VỀ CHÚNG TÔI</span>
                                     </div>
-                                    <h2 class="title text-white">Driving Confidence One Repair at a Time</h2>
+                                    <h2 class="title text-white">Xây Dựng Niềm Tin Qua Mỗi Thiết Kế</h2>
                                     <div class="te-section-desc text-white">
-                                        <p>Et purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis
-                                            cras sed Et purus duis sollicitudin dignissim habitan</p>
+                                        <p>Chúng tôi cung cấp dịch vụ thiết kế web chuyên nghiệp, giúp bạn hiện thực hóa
+                                            ý tưởng kinh doanh của mình.</p>
                                     </div>
                                 </div>
                             </div>
@@ -392,9 +392,9 @@
                                         <img src="/automec/images/icon/icon-card/v-1/icon-1.png" alt="icon">
                                     </div>
                                     <div class="content">
-                                        <h3 class="title">Air Conditioning Maintenance</h3>
-                                        <span class="desc">Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                                            quis venenatis cras sed Et purus duis sollicitudin</span>
+                                        <h3 class="title">Thiết Kế Web Tùy Chỉnh</h3>
+                                        <span class="desc">Chúng tôi tạo ra những trang web tùy chỉnh phù hợp với nhu
+                                            cầu và thương hiệu của bạn.</span>
                                     </div>
                                 </div>
                                 <div class="te-icon-card style-1">
@@ -402,9 +402,9 @@
                                         <img src="/automec/images/icon/icon-card/v-1/icon-2.png" alt="icon">
                                     </div>
                                     <div class="content">
-                                        <h3 class="title">Oil Change & Filter Replacement</h3>
-                                        <span class="desc">Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                                            quis venenatis cras sed Et purus duis sollicitudin</span>
+                                        <h3 class="title">Tối Ưu Hóa SEO</h3>
+                                        <span class="desc">Dịch vụ tối ưu hóa SEO giúp trang web của bạn nổi bật trên
+                                            các công cụ tìm kiếm.</span>
                                     </div>
                                 </div>
                             </div>
@@ -423,14 +423,14 @@
                     <div class="te-section-title justify-content-center text-center">
                         <div class="te-section-content">
                             <div class="short-title-wrapper">
-                                <span class="short-title">Work process</span>
+                                <span class="short-title">Quy trình làm việc</span>
                             </div>
-                            <h2 class="title">Rely On Us For Top-Notch <br /> Car Repairs</h2>
+                            <h2 class="title mb-5">Chúng Tôi Luôn Đặt Chất Lượng Lên Hàng Đầu</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row gy-4 mt-60">
+            <div class="row gy-5">
                 <!-- Single Service Start !-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="te-process-step">
@@ -439,13 +439,12 @@
                         </div>
                         <div class="te-content-wrapper">
                             <div class="te-title-wrapper">
-                                <h3 class="title">Wheel Alignment</h3>
+                                <h3 class="title">Khảo sát Nhu cầu</h3>
                             </div>
                             <div class="content">
-                                <p class="desc">Many desktop publishing packages and web page editors now use Lorem
-                                    Ipsum as their</p>
+                                <p class="desc">Chúng tôi lắng nghe và phân tích nhu cầu của bạn để đưa ra giải pháp tối ưu nhất.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">READ MORE <i
+                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -461,13 +460,12 @@
                         </div>
                         <div class="te-content-wrapper">
                             <div class="te-title-wrapper">
-                                <h3 class="title">Filter Replacement</h3>
+                                <h3 class="title">Thiết kế giao diện</h3>
                             </div>
                             <div class="content">
-                                <p class="desc">Many desktop publishing packages and web page editors now use Lorem
-                                    Ipsum as their</p>
+                                <p class="desc">Chúng tôi tạo ra các thiết kế giao diện đẹp mắt và dễ sử dụng cho người dùng.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">READ MORE <i
+                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -483,13 +481,12 @@
                         </div>
                         <div class="te-content-wrapper">
                             <div class="te-title-wrapper">
-                                <h3 class="title">System Upgrades</h3>
+                                <h3 class="title">Phát triển và Triển khai</h3>
                             </div>
                             <div class="content">
-                                <p class="desc">Many desktop publishing packages and web page editors now use Lorem
-                                    Ipsum as their</p>
+                                <p class="desc">Chúng tôi phát triển và triển khai trang web với hiệu suất tối ưu và bảo mật cao.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">READ MORE <i
+                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
