@@ -25,26 +25,54 @@ class ServiceResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                ->required()
-                ->live(onBlur: true)
-                ->afterStateUpdated(
-                    fn(string $operation, $state, Forms\Set $set) =>
-                    $operation === 'create' ? $set('slug', Str::slug($state)) : null
-                )
-                ->maxLength(255),
-            Forms\Components\TextInput::make('slug')
-                ->label('Slug')
-                ->dehydrated()
-                ->unique(Service::class, ignoreRecord: true)
-                ->required()
-                ->maxLength(255),
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(
+                        fn(string $operation, $state, Forms\Set $set) =>
+                        $operation === 'create' ? $set('slug', Str::slug($state)) : null
+                    )
+                    ->maxLength(255),
+
+                Forms\Components\TextInput::make('slug')
+                    ->label('Slug')
+                    ->dehydrated()
+                    ->unique(Service::class, ignoreRecord: true)
+                    ->required()
+                    ->maxLength(255),
+
+                Forms\Components\TextInput::make('title')
+                    ->label('Title')
+                    ->required()
+                    ->maxLength(255),
+
+                Forms\Components\FileUpload::make('image')
+                    ->label('Image')
+                    ->image()
+                    ->required()
+                   ,
+
+                Forms\Components\Textarea::make('short_desc')
+                    ->label('Short Description')
+                    ->required()
+                    ->maxLength(500),
+
+                Forms\Components\RichEditor::make('content')
+                    ->label('Content')
+                    ->required(),
+
+                Forms\Components\TextInput::make('views')
+                    ->label('Views')
+                    ->numeric()
+                    ->default(0)
+                    ->required(),
             ]);
     }
-
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('image')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('name')

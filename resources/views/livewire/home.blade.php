@@ -457,7 +457,7 @@
                 <div class="slick-item">
                     <div class="client-logo-wrapper">
                         <div class="client-logo">
-                            <img src="/automec/images/brand-logo/client-3.png" alt="logo" />
+                            <img src="/company/1.png" alt="logo" />
                         </div>
                     </div>
                 </div>

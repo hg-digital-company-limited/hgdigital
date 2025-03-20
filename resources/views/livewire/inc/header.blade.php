@@ -83,7 +83,7 @@
                                             </ul>
                                         </li>
                                         <li class="te-dropdown">
-                                            <a wire:navigate href="{{ route('projects') }}">Mẫu giao diện</a>
+                                            <a wire:navigate href="{{ route('projects') }}" style="font-weight: bold">Mẫu giao diện</a>
                                             <ul class="te-submenu">
                                                 <li><a wire:navigate href="{{ route('projects') }}">Project Page</a></li>
                                                 <li><a wire:navigate href="{{ route('project', ['slug' => 'project-details']) }}">Project Details Page</a></li>

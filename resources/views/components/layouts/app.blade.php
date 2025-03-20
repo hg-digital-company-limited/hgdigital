@@ -9,8 +9,8 @@
         content="auto care, auto center, auto repair, auto service, auto shop, automotive, car mechanic, car repair, car service, car shop, garage, mechanic, mechanic auto shop, mechanic workshop" />
     <meta name="author" content="ThemeEarth" />
 
-    <title>Thiết Kế Website Chuyên Nghiệp - HG Digital</title>
-    <meta name="description" content="Chuyên cung cấp dịch vụ thiết kế website chuyên nghiệp, tối ưu SEO, giá rẻ tại HG Digital.">
+    {{-- <title>Thiết Kế Website Chuyên Nghiệp - HG Digital</title>
+    <meta name="description" content="Chuyên cung cấp dịch vụ thiết kế website chuyên nghiệp, tối ưu SEO, giá rẻ tại HG Digital."> --}}
     <meta name="keywords" content="thiết kế website, dịch vụ thiết kế web, website chuyên nghiệp">
     <meta name="google-site-verification" content="Gv7agN348ttTOuMfVTN2Kb3ioHwHrrMxctDM1-Hnjwg" />
     <link rel="icon" type="image/png" href="/logo/icon.png" />
@@ -40,7 +40,17 @@
     <link rel="stylesheet" href="/automec/css/nice-select.css" />
     <link rel="stylesheet" href="/automec/css/animate.css" />
     <link rel="stylesheet" href="/automec/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    </style>
     @livewireStyles
 </head>
 

@@ -27,24 +27,25 @@
         <div class="container">
             <div class="feature-area-wrapper">
                 <div class="row gy-4">
+                    @foreach($services as $service)
                     <!-- single Service start -->
                     <div class="col-md-6 col-lg-4 ">
                         <div class="te-info-card style-2">
                             <div class="te-info-card-inner">
                                 <div class="image">
-                                    <img src="/automec/images/service/service-1.jpg" alt="image"/>
+                                    <img src="{{Storage::url($service->image)}}" alt="image"/>
                                 </div>
                                 <div class="te-content-wrapper">
                                     <div class="icon">
                                         <img src="/automec/images/icon/info-card/v-2/icon-1.png" alt="image"/>
                                     </div>
                                     <div class="te-title-wrapper">
-                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">Engine Diagnostics</a></h2>
+                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => $service->slug]) }}">{{$service->name}}</a></h2>
                                     </div>
                                     <div class="content">
-                                        <p class="desc">Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros</p>
+                                        <p class="desc">{{ Str::limit($service->short_desc, 120) }}</p>
                                         <div class="te-read-more">
-                                            <a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                                            <a wire:navigate href="{{ route('service', ['slug' => $service->slug]) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -52,131 +53,7 @@
                         </div>
                     </div>
                     <!-- single Service end -->
-                    <!-- single Service start -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="te-info-card style-2">
-                            <div class="te-info-card-inner">
-                                <div class="image">
-                                    <img src="/automec/images/service/service-2.jpg" alt="image"/>
-                                </div>
-                                <div class="te-content-wrapper">
-                                    <div class="icon">
-                                        <img src="/automec/images/icon/info-card/v-2/icon-2.png" alt="image"/>
-                                    </div>
-                                    <div class="te-title-wrapper">
-                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">Suspension Tuning</a></h2>
-                                    </div>
-                                    <div class="content">
-                                        <p class="desc">Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros</p>
-                                        <div class="te-read-more">
-                                            <a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single Service end -->
-                    <!-- single Service start -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="te-info-card style-2">
-                            <div class="te-info-card-inner">
-                                <div class="image">
-                                    <img src="/automec/images/service/service-3.jpg" alt="image"/>
-                                </div>
-                                <div class="te-content-wrapper">
-                                    <div class="icon">
-                                        <img src="/automec/images/icon/info-card/v-2/icon-3.png" alt="image"/>
-                                    </div>
-                                    <div class="te-title-wrapper">
-                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">Transmission Service</a></h2>
-                                    </div>
-                                    <div class="content">
-                                        <p class="desc">Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros</p>
-                                        <div class="te-read-more">
-                                            <a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single Service end -->
-                    <!-- single Service start -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="te-info-card style-2">
-                            <div class="te-info-card-inner">
-                                <div class="image">
-                                    <img src="/automec/images/service/service-4.jpg" alt="image"/>
-                                </div>
-                                <div class="te-content-wrapper">
-                                    <div class="icon">
-                                        <img src="/automec/images/icon/info-card/v-2/icon-4.png" alt="image"/>
-                                    </div>
-                                    <div class="te-title-wrapper">
-                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">AutoFix Solutions</a></h2>
-                                    </div>
-                                    <div class="content">
-                                        <p class="desc">Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros</p>
-                                        <div class="te-read-more">
-                                            <a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single Service end -->
-                    <!-- single Service start -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="te-info-card style-2">
-                            <div class="te-info-card-inner">
-                                <div class="image">
-                                    <img src="/automec/images/service/service-5.jpg" alt="image"/>
-                                </div>
-                                <div class="te-content-wrapper">
-                                    <div class="icon">
-                                        <img src="/automec/images/icon/info-card/v-2/icon-5.png" alt="image"/>
-                                    </div>
-                                    <div class="te-title-wrapper">
-                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">Master Mechanics</a></h2>
-                                    </div>
-                                    <div class="content">
-                                        <p class="desc">Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros</p>
-                                        <div class="te-read-more">
-                                            <a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single Service end -->
-                    <!-- single Service start -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="te-info-card style-2">
-                            <div class="te-info-card-inner">
-                                <div class="image">
-                                    <img src="/automec/images/service/service-6.jpg" alt="image"/>
-                                </div>
-                                <div class="te-content-wrapper">
-                                    <div class="icon">
-                                        <img src="/automec/images/icon/info-card/v-2/icon-6.png" alt="image"/>
-                                    </div>
-                                    <div class="te-title-wrapper">
-                                        <h2 class="title"><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">Swift Auto Care</a></h2>
-                                    </div>
-                                    <div class="content">
-                                        <p class="desc">Purus velit aenean qui habitant eros bibendum Purus velit aenean qitant eros bibendum Purus velit aenean quis habitant eros</p>
-                                        <div class="te-read-more">
-                                            <a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}" class="te-theme-btn">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single Service end -->
+                    @endforeach
                 </div>
             </div>
         </div>

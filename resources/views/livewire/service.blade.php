@@ -1,4 +1,8 @@
 <div>
+    <head>
+        <title>{{$service->title}} - HG Digital</title>
+        <meta name="description" content="{{$service->short_desc}}">
+    </head>
     <div class="page-breadcrumb-area">
         <div class="page-bg">
             <div class="page-overlay" style="background-color: rgba(23, 23, 23, 0.0);"></div>
@@ -9,12 +13,13 @@
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
                         <div class="page-heading">
-                            <h3 class="page-title">Service Details</h3>
+                            <h3 class="page-title">{{$service->title}}</h3>
                         </div>
                         <div class="breadcrumb-list">
                             <ul>
                                 <li><a wire:navigate href="{{ route('home') }}">Home</a></li>
-                                <li class="active">Service Details</li>
+                                <li><a wire:navigate href="{{ route('home') }}">Dịch vụ</a></li>
+                                <li class="active">{{$service->name}}</li>
                             </ul>
                         </div>
                     </div>
@@ -30,60 +35,12 @@
                 <div class="col-lg-8">
                     <div class="te-service-details-wrapper">
                         <div class="service-details">
-                            <div class="image">
-                                <img src="/automec/images/service/service-details.jpg" alt="Image"/>
-                            </div>
                             <div class="content">
-                                <div class="te-title-wrapper">
-                                    <div class="title-inner">
-                                        <h3 class="title">Empowering you to live life Of a without limitations</h3>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra Aliquam an eros justo, posuere lobortis  viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros ju posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posu obortis non, viverra Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam an eros justo, posuere lobortis</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gy-4 mt-3">
-                            <div class="col-md-6">
-                                <div class="gallery-wrapper">
-                                    <img class="rounded" src="/automec/images/service/gallery-one.jpg" alt="Image"/>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="gallery-wrapper">
-                                    <img class="rounded" src="/automec/images/service/gallery-two.jpg" alt="Image"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-details-overview">
-                            <h3 class="mb-0">We Make Your Ideas Shine</h3>
-                            <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra Aliquam an eros justo, posuere lobortis  viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros ju posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posu obortis non, viverra Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam an eros justo, posuere lobortis</p>
-                            <div class="te-list-item-wrapper">
-                                <div class="te-list-item style-1">
-                                    <span class="icon"><i class="fa-regular fa-check"></i></span>
-                                    <span class="text">We Put the 'Car' in Caring</span>
-                                </div>
-                                <div class="te-list-item style-1">
-                                    <span class="icon"><i class="fa-regular fa-check"></i></span>
-                                    <span class="text">Elite Performance Rehab</span>
-                                </div>
-                                <div class="te-list-item style-1">
-                                    <span class="icon"><i class="fa-regular fa-check"></i></span>
-                                    <span class="text">Your Road to Reliable Repairs</span>
-                                </div>
-                                <div class="te-list-item style-1">
-                                    <span class="icon"><i class="fa-regular fa-check"></i></span>
-                                    <span class="text">Precision in Every Piston</span>
-                                </div>
-                            </div>
-                            <p>Aliquam eros justo, posuere loborti viverra laoreet matti ullam corper posuere viverra .Aliquam eros justo, posuere lobortis  viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquas justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra</p>
-                            <div class="content">
-                                <h4>Repairs & Upgrades</h4>
-                                <p>Aliquam eros justo, posuere loborti vive rra laoreet matti ullamc orper posu ere viverra .Aliquam eros justo, posuer lobortis non, vive rra laoreet augue mattis fermentum ullamcorper viverra laore Aliquam eros justo, posuere loviverra laoreet mat ullamcorper posue viverra .Aliquam eros justo, posuere lobor</p>
-                            </div>
+                                {!! $service->content !!}
 
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <!-- Service Details Content End -->
@@ -132,5 +89,16 @@
         </div>
     </div>
     <!-- Service Details Page End !-->
-
+    <style>
+        h3 {
+        font-size: 30px;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+    h3 {
+        font-size: 24px;
+    }
+}
+    </style>
 </div>
