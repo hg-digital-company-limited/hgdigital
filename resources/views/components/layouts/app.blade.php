@@ -74,7 +74,7 @@
             <div class="row gy-5">
                 <div class="col-lg-6">
                     <div class="subscribe-image">
-                        <img src="/automec/images/section-bg/subscribe-bg.png" alt="image">
+                        <img src="/company/work.png" alt="image">
                     </div>
                 </div>
                 <div class="col-lg-6 align-self-center">

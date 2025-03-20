@@ -56,9 +56,10 @@ class ServiceResource extends Resource
                     ->required()
                     ->maxLength(500),
 
-                Forms\Components\RichEditor::make('content')
+                    Forms\Components\RichEditor::make('content')
                     ->label('Content')
-                    ->required(),
+                    ->required()
+                    ->columnSpan(2), // Set colspan to 2
 
                 Forms\Components\TextInput::make('views')
                     ->label('Views')
