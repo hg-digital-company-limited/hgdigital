@@ -115,10 +115,10 @@
                     <div class="te-menu-sidebar-single-widget">
                         <h5 class="te-menu-sidebar-title">Contact Info</h5>
                         <div class="te-header-contact-info">
-                            <span><i class="fa-solid fa-location-dot"></i>6391 Elgin St. Celina, 10299</span>
+                            <span><i class="fa-solid fa-location-dot"></i>67 ĐHT 22, Đông Hưng Thuận, Q12</span>
                             <span><a href="mailto:info@example.com"><i
-                                        class="fa-solid fa-envelope"></i>info@example.com</a> </span>
-                            <span><a href="tel:+123-456-7890"><i class="fa-solid fa-phone"></i>+123-456-7890</a></span>
+                                        class="fa-solid fa-envelope"></i>hgdigital.company@gmail.com</a> </span>
+                            <span><a href="tel:+84966579217"><i class="fa-solid fa-phone"></i>+(84) 966 579 217</a></span>
                         </div>
                         <div class="te-social-profile">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>

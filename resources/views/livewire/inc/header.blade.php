@@ -58,36 +58,45 @@
                             <div class="te-menu d-inline-block">
                                 <nav id="main-menu" class="te-main-menu">
                                     <ul>
-                                        <li class="te-dropdown active">
-                                            <a wire:navigate href="{{ route('home') }}">Home</a>
-                                            <ul>
-                                                <li><a wire:navigate href="{{ route('home') }}">Home Page 1</a></li>
-                                                <li><a wire:navigate href="{{ route('home') }}">Home Page 2</a></li>
-                                            </ul>
+                                        <li class=" active">
+                                            <a wire:navigate href="{{ route('home') }}">Trang chủ</a>
                                         </li>
-                                        <li><a wire:navigate href="{{ route('about') }}">About Us</a></li>
+                                        <li><a wire:navigate href="{{ route('about') }}">Về Chúng Tôi</a></li>
                                         <li class="te-dropdown">
-                                            <a wire:navigate href="{{ route('services') }}">Services</a>
+                                            <a wire:navigate href="{{ route('services') }}">Dịch Vụ</a>
                                             <ul class="te-submenu">
-                                                <li><a wire:navigate href="{{ route('services') }}">Service Page</a></li>
-                                                <li><a wire:navigate href="{{ route('service', ['slug' => 'service-details']) }}">Service Details Page</a></li>
+                                                @foreach($services as $service)
+                                                <li>
+                                                    <a wire:navigate href="{{ route('service', ['slug' => $service->slug]) }}">
+                                                        {{ $service->name }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+
                                             </ul>
                                         </li>
                                         <li class="te-dropdown">
-                                            <a wire:navigate href="{{ route('projects') }}">Projects</a>
+                                            <a wire:navigate href="{{ route('projects') }}">Dự Án</a>
                                             <ul class="te-submenu">
                                                 <li><a wire:navigate href="{{ route('projects') }}">Project Page</a></li>
                                                 <li><a wire:navigate href="{{ route('project', ['slug' => 'project-details']) }}">Project Details Page</a></li>
                                             </ul>
                                         </li>
                                         <li class="te-dropdown">
-                                            <a wire:navigate href="{{ route('blogs') }}">Blog</a>
+                                            <a wire:navigate href="{{ route('projects') }}">Mẫu giao diện</a>
+                                            <ul class="te-submenu">
+                                                <li><a wire:navigate href="{{ route('projects') }}">Project Page</a></li>
+                                                <li><a wire:navigate href="{{ route('project', ['slug' => 'project-details']) }}">Project Details Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="te-dropdown">
+                                            <a wire:navigate href="{{ route('blogs') }}">Tin Tức</a>
                                             <ul class="te-submenu">
                                                 <li><a wire:navigate href="{{ route('blogs') }}">Blog Page</a></li>
                                                 <li><a wire:navigate href="{{ route('blog', ['slug' => 'blog-details']) }}">Blog Details Page</a></li>
                                             </ul>
                                         </li>
-                                        <li><a wire:navigate href="{{ route('contact') }}">Contact</a></li>
+                                        <li><a wire:navigate href="{{ route('contact') }}">Liên hệ</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -113,4 +122,9 @@
             <!-- Header Nav Menu End -->
         </div>
     </div>
+    <style>
+        .te-main-menu ul ul li {
+    width: 278px;
+}
+    </style>
 </header>
