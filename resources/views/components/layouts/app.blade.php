@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
 
     <meta name="keywords" content="thiết kế website, dịch vụ thiết kế web, website chuyên nghiệp">
-    <meta name="google-site-verification" content="Gv7agN348ttTOuMfVTN2Kb3ioHwHrrMxctDM1-Hnjwg" />
+    <meta name="google-site-verification" content="FxSV4Gs66U9Bx-T0ciAiPZ-3idtQ-kMjiWNzcUS0U-M" />
     <link rel="icon" type="image/png" href="/logo/icon.png" />
     <meta property="og:image" content="{{ asset('company/banner.png') }}" />
     <meta property="og:url" content="{{ url()->current() }}" />
