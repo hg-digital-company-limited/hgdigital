@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Đường dẫn thư mục dự án
-PROJECT_DIR="/var/www/www.hgdigital.site"
+PROJECT_DIR="/var/www/hgdigital.site"
 GIT_REPO="https://github.com/hg-digital-company-limited/hgdigital.git"
 SQL_FILE="${PROJECT_DIR}/hgdigital.sql"
 DB_NAME="hgdigitalhgdigital"
