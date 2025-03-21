@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Đường dẫn thư mục dự án
-PROJECT_DIR="/var/www/hgdigital.site"
+PROJECT_DIR="/var/www/hgdigital.online"
 GIT_REPO="https://github.com/hg-digital-company-limited/hgdigital.git"
 SQL_FILE="${PROJECT_DIR}/hgdigital.sql"
-DB_NAME="hgdigitalhgdigital"
-DB_USER="hgdigitalhgdigital"
-DB_PASSWORD="hgdigitalhgdigitalhgdigitalhgdigital"  # Thay đổi mật khẩu nếu cần
+DB_NAME="hgdigital"
+DB_USER="hgdigital"
+DB_PASSWORD="hgdigitalhgdigital"  # Thay đổi mật khẩu nếu cần
 
 # Xóa thư mục dự án
 sudo rm -rf ${PROJECT_DIR}/*

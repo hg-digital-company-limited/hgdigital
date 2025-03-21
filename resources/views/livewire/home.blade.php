@@ -1257,7 +1257,7 @@
                                     <img src="/automec/images/icon/phone.png" alt="icon">
                                 </div>
                                 <div class="te-content-wrapper">
-                                    <h2 class="te-cta-title text-white">Cần Giúp Đỡ? Gọi Chúng Tôi Ngay <br /> +201- 555-0124
+                                    <h2 class="te-cta-title text-white">Cần Giúp Đỡ? Gọi Chúng Tôi Ngay <br /> 0966 579 217
                                     </h2>
                                     <p class="text text-white">Chúng tôi luôn sẵn sàng hỗ trợ bạn với dịch vụ tốt nhất.</p>
                                 </div>
