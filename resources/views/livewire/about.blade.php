@@ -20,7 +20,7 @@
                         </div>
                         <div class="breadcrumb-list">
                             <ul>
-                                <li><a href="index.php">Trang Chủ</a></li>
+                                <li><a wire:navigate href="{{ route('home') }}">Trang Chủ</a></li>
                                 <li class="active">Về Chúng Tôi</li>
                             </ul>
                         </div>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
                             <div class="te-theme-btn-wrapper mt-2">
-                                <a href="services.php" class="te-theme-btn style-2">TÌM HIỂU THÊM<i class="fa-solid fa-arrow-right-long"></i></a>
+                                <a wire:navigate href="{{ route('services') }}" class="te-theme-btn style-2">TÌM HIỂU THÊM<i class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                             <div class="short-title-wrapper">
                                 <span class="short-title only-divider">Khách hàng nói gì</span>
                             </div>
-                            <h2 class="title">Hiệu suất Nói Lên Tất Cả</h2>
+                            <h2 class="title">Hiệu suất <br /> Nói Lên Tất Cả</h2>
                         </div>
                     </div>
                     <div class="te-testimonial-slider-wrapper" id="testimonial_two">
@@ -444,7 +444,7 @@
                             <div class="content">
                                 <p class="desc">Chúng tôi lắng nghe và phân tích nhu cầu của bạn để đưa ra giải pháp tối ưu nhất.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
+                                    <a wire:navigate href="{{ route('services') }}" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -465,7 +465,7 @@
                             <div class="content">
                                 <p class="desc">Chúng tôi tạo ra các thiết kế giao diện đẹp mắt và dễ sử dụng cho người dùng.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
+                                    <a wire:navigate href="{{ route('services') }}" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -486,7 +486,7 @@
                             <div class="content">
                                 <p class="desc">Chúng tôi phát triển và triển khai trang web với hiệu suất tối ưu và bảo mật cao.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
+                                    <a wire:navigate href="{{ route('services') }}" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>

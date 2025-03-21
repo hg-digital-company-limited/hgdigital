@@ -3,7 +3,7 @@
     <head>
         <title>Trang Chủ - HG DIGITAL</title>
         <meta property="og:description" content="HG DIGITAL cung cấp giải pháp thiết kế website tối ưu, chuẩn SEO, giao diện đẹp mắt và thân thiện người dùng." />
-
+        <meta property="og:image" content="{{ asset('company/banner.png') }}" />
     </head>
     <!-- Slider Section Start !-->
     <div class="slider-area style-1">
@@ -27,7 +27,7 @@
                                         <div class="te-slider-btn-wrapper">
                                             <a wire:navigate href="{{ route('contact') }}" class="te-theme-btn style-2">LIÊN HỆ NGAY <i
                                                     class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="https://www.youtube.com/watch?v=7e90gBu4pas"
+                                            <a href="https://www.youtube.com/watch?v=kKOrvU8NPag"
                                                 class="te-call-btn video-play mfp-iframe">
                                                 <div class="te-icon">
                                                     <i class="fa-solid fa-play"></i>
@@ -913,7 +913,7 @@
                             <div class="short-title-wrapper">
                                 <span class="short-title">Quy trình làm việc</span>
                             </div>
-                            <h2 class="title">Khi Chất Lượng Quan Trọng <br /> Hãy Đếm Vào Chúng Tôi</h2>
+                            <h2 class="title">Thiết Kế Website Đẳng Cấp <br /> Hãy Chọn Chúng Tôi</h2>
                         </div>
                     </div>
                 </div>
@@ -932,7 +932,7 @@
                             <div class="content">
                                 <p class="desc">Chúng tôi lắng nghe và phân tích nhu cầu của bạn để đưa ra giải pháp tối ưu nhất.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
+                                    <a wire:navigate href="{{ route('services') }}" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -953,7 +953,7 @@
                             <div class="content">
                                 <p class="desc">Chúng tôi tạo ra các thiết kế giao diện đẹp mắt và dễ sử dụng cho người dùng.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
+                                    <a wire:navigate href="{{ route('services') }}" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -974,7 +974,7 @@
                             <div class="content">
                                 <p class="desc">Chúng tôi phát triển và triển khai trang web với hiệu suất tối ưu và bảo mật cao.</p>
                                 <div class="te-read-more">
-                                    <a href="service-details.php" class="te-read-more-btn">TÌM HIỂU THÊM <i
+                                    <a wire:navigate href="{{ route('services') }}" class="te-read-more-btn">TÌM HIỂU THÊM <i
                                             class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -1094,24 +1094,25 @@
                     <div class="te-section-title justify-content-center text-center">
                         <div class="te-section-content">
                             <div class="short-title-wrapper">
-                                <span class="short-title">our team member</span>
+                                <span class="short-title">thành viên đội ngũ chúng tôi</span>
                             </div>
-                            <h2 class="title">Building a Smarter Future <br /> through IT Amplifying</h2>
+                            <h2 class="title">Xây Dựng Tương Lai Thông Minh <br /> Qua Thiết Kế Website</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="te-team-member-slider">
+
             <div class="slick-slider-item">
                 <div class="te-team-card">
                     <div class="image">
-                        <img src="/automec/images/team-member/team-1.jpg" alt="team-member" />
+                        <img src="/automec/images/team-member/team-4.jpg" alt="thành viên đội ngũ" />
                     </div>
                     <div class="te-content-wrapper">
                         <div class="content">
-                            <h3 class="title"><a href="team-details.php">Albert Flores</a></h3>
-                            <p class="desc">Medical Assistant</p>
+                            <h3 class="title"><a href="team-details.php">Trần Lê Hoàng Giang</a></h3>
+                            <p class="desc">Giám Đốc Dự Án</p>
                             <div class="social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -1125,12 +1126,12 @@
             <div class="slick-slider-item">
                 <div class="te-team-card">
                     <div class="image">
-                        <img src="/automec/images/team-member/team-2.jpg" alt="team-member" />
+                        <img src="/automec/images/team-member/team-5.jpg" alt="thành viên đội ngũ" />
                     </div>
                     <div class="te-content-wrapper">
                         <div class="content">
-                            <h3 class="title"><a href="team-details.php">Darrell Steward</a></h3>
-                            <p class="desc">Marketing Coordinator</p>
+                            <h3 class="title"><a href="team-details.php">Trần Lê Huy Hoàng</a></h3>
+                            <p class="desc">Full-Stack Developer</p>
                             <div class="social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -1144,12 +1145,12 @@
             <div class="slick-slider-item">
                 <div class="te-team-card">
                     <div class="image">
-                        <img src="/automec/images/team-member/team-3.jpg" alt="team-member" />
+                        <img src="/automec/images/team-member/team-3.jpg" alt="thành viên đội ngũ" />
                     </div>
                     <div class="te-content-wrapper">
                         <div class="content">
-                            <h3 class="title"><a href="team-details.php">Theresa Webb</a></h3>
-                            <p class="desc">Medical Assistant</p>
+                            <h3 class="title"><a href="team-details.php">Nguyễn Hữu Tài</a></h3>
+                            <p class="desc">Project Manager</p>
                             <div class="social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -1163,12 +1164,12 @@
             <div class="slick-slider-item">
                 <div class="te-team-card">
                     <div class="image">
-                        <img src="/automec/images/team-member/team-4.jpg" alt="team-member" />
+                        <img src="/automec/images/team-member/team-6.jpg" alt="thành viên đội ngũ" />
                     </div>
                     <div class="te-content-wrapper">
                         <div class="content">
-                            <h3 class="title"><a href="team-details.php">Arlene McCoy</a></h3>
-                            <p class="desc">Medical Assistant</p>
+                            <h3 class="title"><a href="team-details.php">Nguyễn Văn Phúc</a></h3>
+                            <p class="desc">SENIOR FRONTEND</p>
                             <div class="social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -1182,12 +1183,12 @@
             <div class="slick-slider-item">
                 <div class="te-team-card">
                     <div class="image">
-                        <img src="/automec/images/team-member/team-3.jpg" alt="team-member" />
+                        <img src="/automec/images/team-member/team-2.jpg" alt="thành viên đội ngũ" />
                     </div>
                     <div class="te-content-wrapper">
                         <div class="content">
-                            <h3 class="title"><a href="team-details.php">Brooklyn Simmons</a></h3>
-                            <p class="desc">Engineer Assistant</p>
+                            <h3 class="title"><a href="team-details.php">Phạm Minh Tuấn</a></h3>
+                            <p class="desc">SENIOR BACKEND</p>
                             <div class="social">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -1198,48 +1199,50 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <!-- Team Member Slider Area End --><!-- Appointment Area Start -->
+    <!-- Khu Vực Slider Thành Viên Đội Ngũ Kết Thúc -->
+    <!-- Khu Vực Đặt Hẹn Bắt Đầu -->
     <div class="appointment-area style-1"
-        style="background-image: url('/automec/images/section-bg/appointment-bg.jpg')">
+        style="background-image: url('/company/ef30658c-02c1-4478-93f8-bc50644dfcc2 1 (2).png')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <!-- Comment Form Start -->
+                    <!-- Form Nhận Đơn Bắt Đầu -->
                     <div class="te-comment-respond style-2 mt-0">
-                        <h2 class="title text-white">Get A Quote</h2>
-                        <form action="../../mail.php" method="post" class="te-comment-form">
+                        <h2 class="title text-white">Nhận Báo Giá</h2>
+                        <form  class="te-comment-form">
                             <div class="row gx-4">
                                 <div class="col-xl-6">
                                     <div class="te-contacts-email">
-                                        <input name="email" type="email" placeholder="Your Email*">
+                                        <input name="email" type="email" placeholder="Email Của Bạn*">
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="te-contacts-name">
-                                        <input name="phone" type="text" placeholder="Your Phone">
+                                        <input name="phone" type="text" placeholder="Số Điện Thoại Của Bạn">
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="te-contacts-message">
                                         <textarea name="message" cols="20" rows="3"
-                                            placeholder="Write your Message here"></textarea>
+                                            placeholder="Viết Tin Nhắn Của Bạn Tại Đây"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="te-theme-btn" type="submit">SEND NOW</button>
+                                    <button class="te-theme-btn" type="submit">GỬI NGAY</button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <!-- Comment Form End -->
+                    <!-- Form Nhận Đơn Kết Thúc -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Appointment Area End -->
+    <!-- Khu Vực Đặt Hẹn Kết Thúc -->
     <div class="cta-section-area style-1">
         <div class="container">
             <div class="row">
@@ -1247,16 +1250,16 @@
                     <div class="cta-area style-1">
                         <div class="te-cta-inner-area">
                             <div class="te-cta-collumn te-column-bg-image">
-                                <img src="/automec/images//section-bg/about-sec-bg.jpg" alt="image">
+                                <img src="/company/article.jpg" alt="hình ảnh">
                             </div>
                             <div class="te-cta-collumn position-relative">
                                 <div class="icon">
                                     <img src="/automec/images/icon/phone.png" alt="icon">
                                 </div>
                                 <div class="te-content-wrapper">
-                                    <h2 class="te-cta-title text-white">Need help? Call us Today <br /> +201- 555-0124
+                                    <h2 class="te-cta-title text-white">Cần Giúp Đỡ? Gọi Chúng Tôi Ngay <br /> +201- 555-0124
                                     </h2>
-                                    <p class="text text-white">Lorem Ipsum is simply dummy text of the printing </p>
+                                    <p class="text text-white">Chúng tôi luôn sẵn sàng hỗ trợ bạn với dịch vụ tốt nhất.</p>
                                 </div>
                             </div>
                         </div>
@@ -1264,7 +1267,8 @@
                 </div>
             </div>
         </div>
-    </div><!-- Latest Posts Area Start -->
+    </div>
+    <!-- Khu Vực Bài Đăng Mới Bắt Đầu -->
     <div class="latest-posts-area style-1 position-relative te-py-120">
         <div class="sec-shape">
             <img src="/automec/images/shape/wheel-shape.png" alt="image">
@@ -1305,9 +1309,9 @@
                                     </div>
                                     <div class="te-single-meta">
                                         <span class="icon">
-                                            <i class="fa-solid fa-comments"></i>
+                                            <i class="fa-solid fa-eye"></i>
                                         </span>
-                                        <span class="text">Bình luận ({{ $blog->views ?? 0 }})</span> <!-- Thay đổi số lượng bình luận nếu có -->
+                                        <span class="text">Views ({{ $blog->views ?? 0 }})</span> <!-- Thay đổi số lượng bình luận nếu có -->
                                     </div>
                                 </div>
                                 <h3 class="title">

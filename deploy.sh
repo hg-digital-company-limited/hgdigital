@@ -3,7 +3,7 @@
 # Đường dẫn thư mục dự án
 PROJECT_DIR="/var/www/www.hgdigital.site"
 GIT_REPO="https://github.com/hg-digital-company-limited/hgdigital.git"
-SQL_FILE="${PROJECT_DIR}/cghome.sql"
+SQL_FILE="${PROJECT_DIR}/hgdigital.sql"
 DB_NAME="hgdigitalhgdigital"
 DB_USER="hgdigitalhgdigital"
 DB_PASSWORD="hgdigitalhgdigitalhgdigitalhgdigital"  # Thay đổi mật khẩu nếu cần

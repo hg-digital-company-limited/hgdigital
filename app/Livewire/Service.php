@@ -9,11 +9,13 @@ class Service extends Component
 {
     public $slug; // Thêm thuộc tính slug
     public $service; // Thêm thuộc tính để lưu dịch vụ
-
+    public $categories;
     public function mount($slug) // Sử dụng mount để lấy slug từ route
     {
         $this->slug = $slug;
         $this->service = ServiceModel::where('slug', $this->slug)->first(); // Tìm dịch vụ theo slug
+        $this->categories = ServiceModel::all();
+        $this->service->increment('views');
     }
 
     public function render()

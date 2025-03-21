@@ -1,6 +1,6 @@
 <div>
     <head>
-        <title>{{$service->title}} - HG Digital</title>
+        <title>{{$service->name}} - HG Digital</title>
         <meta name="description" content="{{$service->short_desc}}">
     </head>
     <div class="page-breadcrumb-area">
@@ -18,7 +18,7 @@
                         <div class="breadcrumb-list">
                             <ul>
                                 <li><a wire:navigate href="{{ route('home') }}">Home</a></li>
-                                <li><a wire:navigate href="{{ route('home') }}">Dịch vụ</a></li>
+                                <li><a wire:navigate href="{{ route('services') }}">Dịch vụ</a></li>
                                 <li class="active">{{$service->name}}</li>
                             </ul>
                         </div>
@@ -52,12 +52,10 @@
                                 <h4 class="wp-block-heading">Services List</h4>
                             </div>
                             <ul>
-                                <li><a href="#">Gearbox Guru</a></li>
-                                <li><a href="#">Turbo Tech Services</a></li>
-                                <li><a href="#">Pro Drive Repairs</a></li>
-                                <li><a href="#">Consumer Sector</a></li>
-                                <li><a href="#">Apex Auto Clinic</a></li>
-                                <li><a href="#">Precision Auto</a></li>
+                                @foreach ($categories as $category)
+                                    <li><a wire:navigate href="{{ route('service', $category->slug) }}">{{ $category->name }}</a></li>
+                                @endforeach
+                            </ul>
                             </ul>
                         </div>
                         <div class="widget te_widget_pdf">

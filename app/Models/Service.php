@@ -19,6 +19,10 @@ class Service extends Model
         'content',      // Thêm trường content
         'views',        // Thêm trường views
     ];
-
+    public function incrementViews()
+    {
+        $this->views++;
+        $this->save();
+    }
     // Nếu bạn cần thêm các phương thức tùy chỉnh, có thể thêm ở đây
 }

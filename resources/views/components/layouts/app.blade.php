@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="vi">
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta name="description" content="Automec - Car Service & Repair HTML5 Template" />
-    <meta name="keywords"
-        content="auto care, auto center, auto repair, auto service, auto shop, automotive, car mechanic, car repair, car service, car shop, garage, mechanic, mechanic auto shop, mechanic workshop" />
-    <meta name="author" content="ThemeEarth" />
 
-    {{-- <title>Thiết Kế Website Chuyên Nghiệp - HG Digital</title>
-    <meta name="description" content="Chuyên cung cấp dịch vụ thiết kế website chuyên nghiệp, tối ưu SEO, giá rẻ tại HG Digital."> --}}
     <meta name="keywords" content="thiết kế website, dịch vụ thiết kế web, website chuyên nghiệp">
     <meta name="google-site-verification" content="Gv7agN348ttTOuMfVTN2Kb3ioHwHrrMxctDM1-Hnjwg" />
     <link rel="icon" type="image/png" href="/logo/icon.png" />
-
+    <meta property="og:image" content="{{ asset('company/banner.png') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
     <link rel="apple-touch-icon" href="/logo/icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/logo/icon.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/logo/icon.png" />
@@ -24,8 +19,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/logo/icon.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/logo/icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/logo/icon.png" />
-
-    <meta property="og:image" content="https://www.hgdigital.site/assets/img/logo/banner.png" />
+    <link rel="canonical" href="{{ url()->current() }}" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,19 +117,21 @@
                         </div>
                     </div>
                     <div class="te-menu-sidebar-single-widget">
-                        <h5 class="te-menu-sidebar-title">Contact Info</h5>
+                        <h5 class="te-menu-sidebar-title">Thông tin liên hệ</h5>
                         <div class="te-header-contact-info">
+                            <span><i class="fa-solid fa-building"></i>Công ty TNHH HG Digital</span>
                             <span><i class="fa-solid fa-location-dot"></i>67 ĐHT 22, Đông Hưng Thuận, Q12</span>
-                            <span><a href="mailto:info@example.com"><i
+                            <span><a href="mailto:hgdigital.company@gmail.com"><i
                                         class="fa-solid fa-envelope"></i>hgdigital.company@gmail.com</a> </span>
                             <span><a href="tel:+84966579217"><i class="fa-solid fa-phone"></i>+(84) 966 579 217</a></span>
+                            <span><a href="https://www.facebook.com/CONG.TY.TNHH.HG.DIGITAL" target="_blank"><i class="fa-brands fa-facebook-f"></i>@CONG.TY.TNHH.HG.DIGITAL</a></span>
                         </div>
-                        <div class="te-social-profile">
+                        {{-- <div class="te-social-profile">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
                             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                             <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

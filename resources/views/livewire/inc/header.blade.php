@@ -93,7 +93,7 @@
                                     <span>Cần giúp đỡ?</span>
                                     <a href="tel:0966579217"><i class="fa-solid fa-phone"></i> +84 966579217</a>
                                 </div>
-                                <a href="{{ route('contact') }}" class="te-quote-btn">NHẬN BÁO GIÁ<i class="fa-solid fa-arrow-right"></i></a>
+                                <a wire:navigate href="{{ route('contact') }}" class="te-quote-btn">NHẬN BÁO GIÁ<i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                             <!-- Header Button Start !-->
                             <!-- Mobile Menu Toggle Button Start !-->
